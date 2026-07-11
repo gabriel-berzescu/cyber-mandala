@@ -23,9 +23,16 @@ Mai multe detalii despre idee și tradeoff-uri în [IDEA.md](IDEA.md).
 
 ## Dezvoltare
 
-_TODO: instrucțiuni de setup (instalare dependențe, pornire dev server) —
-de completat odată cu scheletul de proiect (probabil Vite + Three.js)._
+```bash
+npm install       # instalează dependențele
+npm run dev       # dev server pe http://localhost:5173
+npm run build     # typecheck (tsc) + build de producție în dist/
+npm run preview   # servește build-ul de producție local
+```
 
 ## Structură
 
-_TODO: descriere pe scurt a folderelor principale, după prima implementare._
+- `index.html` — pagina gazdă (canvas-ul e creat din cod)
+- `src/main.ts` — scenă, cameră, renderer, bloom, controale GUI, bucla de animație
+- `src/mandala.ts` — generatorul procedural de mandale (seed determinist, straturi, simetrie radială)
+- `src/palettes.ts` — paletele de culori neon
