@@ -3,6 +3,9 @@
 Generator interactiv de **mandale 3D** în browser, construit cu **Three.js** —
 geometrie sacră întâlnește estetica neon / cyberpunk.
 
+**Demo live:** <https://gabriel-berzescu.github.io/cyber-mandala/>
+(publicat automat pe GitHub Pages la fiecare push pe `main`)
+
 ## Concept
 
 - Mandale **3D generate procedural**, cu simetrie radială configurabilă,
@@ -29,6 +32,12 @@ npm run dev       # dev server pe http://localhost:5173
 npm run build     # typecheck (tsc) + build de producție în dist/
 npm run preview   # servește build-ul de producție local
 ```
+
+### Deploy
+
+Workflow-ul din `.github/workflows/deploy-pages.yml` face build și publică
+`dist/` pe GitHub Pages la fiecare push pe `main` (build-ul folosește
+`base: './'`, deci funcționează servit de la orice cale).
 
 ## Structură
 
